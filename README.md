@@ -15,36 +15,6 @@ This project is a Selenium Cucumber-based test automation framework using Maven.
 ## Project Structure
 
 The project structure follows a standard Maven project layout with the following directories and files:
-.
-├── src
-│   ├── main
-│   └── test
-│       ├── java
-│       │   ├── PageFactory
-│       │   └── StepDefinition
-│       │       ├── AddToCart
-│       │       ├── Checkout
-│       │       ├── FinalProcess
-│       │       ├── Hooks
-│       │       ├── Login
-│       │       ├── ReadProperties
-│       │       ├── Utility
-│       │       └── ViewItems
-│       └── TestRunner
-│       ├── resources
-│       │   ├── Drivers
-│       │   ├── Features
-│       │   │   ├── TestA-Login.feature
-│       │   │   ├── TestB-ViewItems.feature
-│       │   │   ├── TestC-AddToCartItems.feature
-│       │   │   ├── TestD-CheckOut.feature
-│       │   │   └── TestE-FinalProcess.feature
-│       │   ├── Locators
-│       │   │   └── SwagLab.properties
-│       │   └── TestData
-│       │       └── SwagLab.properties
-│       └── extent.properties
-└── pom.xml
 
 ### Key Directories and Files:
 - **PageFactory**: Contains page object classes that represent different pages of the application.
