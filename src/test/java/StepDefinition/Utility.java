@@ -14,13 +14,11 @@ public class Utility {
         data = ReadProperties.getFileValue(page, data);
         element = ReadProperties.getXpathValue(page, element);
         fetchSendElementKey(element).sendKeys(data);
-
     }
 
     public static void clickOnElement(String element, String page){
         element = ReadProperties.getXpathValue(page, element);
         WebElementFactory.getElement(element).click();
-
     }
 
 }
