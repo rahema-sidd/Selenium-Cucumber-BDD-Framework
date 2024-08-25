@@ -10,10 +10,10 @@ public class ReadProperties {
 
     public static String getFileValue(String dataFilename, String key){
         try {
+            
             String valFileURL = "src\\test\\resources\\TestData\\"+dataFilename+".properties";
             FileInputStream fileInpStr = new FileInputStream(valFileURL);
             properties.load(fileInpStr);
-
 
         }catch (IOException e){
             throw new RuntimeException(e);
@@ -22,7 +22,8 @@ public class ReadProperties {
     }
 
     public static String getXpathValue(String xpathFilename, String key){
-        try {
+        try {           
+
             String xpathFileURL = "src\\test\\resources\\Locators\\"+xpathFilename+".properties";
             FileInputStream fileInputStream = new FileInputStream(xpathFileURL);
             properties.load(fileInputStream);
@@ -31,6 +32,5 @@ public class ReadProperties {
             throw new RuntimeException(e);
         }
         return properties.getProperty(key);
-
     }
 }
