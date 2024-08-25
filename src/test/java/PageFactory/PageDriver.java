@@ -9,9 +9,9 @@ public class PageDriver {
     public static WebDriver driver;
     public static ChromeOptions options;
 
-//    public static String url = "https://www.saucedemo.com/";
 
     public static void launchDriver(){
+        
         options = new ChromeOptions();
         options.addArguments("--remote-allow-origin=*");
         driver = new ChromeDriver(options);
@@ -21,9 +21,9 @@ public class PageDriver {
     }
 
     public static void getURL(String url, String page){
+
         driver.get(ReadProperties.getFileValue(page, url));
         driver.manage().window().maximize();
-
         System.out.println("URL: "+ url+" is fetched");
 
     }
