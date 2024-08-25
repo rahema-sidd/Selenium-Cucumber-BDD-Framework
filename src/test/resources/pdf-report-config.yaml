@@ -1,0 +1,7 @@
+pdf:
+  title: "My Project PDF Report"
+  author: "Your Name"
+  company: "Your Company"
+  logo: "path/to/logo.png"
+  theme: "dark"
+  pageSize: "A4"
