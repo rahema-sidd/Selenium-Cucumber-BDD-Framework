@@ -15,6 +15,36 @@ This project is a Selenium Cucumber-based test automation framework using Maven.
 ## Project Structure
 
 The project structure follows a standard Maven project layout with the following directories and files:
+.
+├── src
+│   ├── main
+│   └── test
+│       ├── java
+│       │   ├── PageFactory
+│       │   └── StepDefinition
+│       │       ├── AddToCart
+│       │       ├── Checkout
+│       │       ├── FinalProcess
+│       │       ├── Hooks
+│       │       ├── Login
+│       │       ├── ReadProperties
+│       │       ├── Utility
+│       │       └── ViewItems
+│       └── TestRunner
+│       ├── resources
+│       │   ├── Drivers
+│       │   ├── Features
+│       │   │   ├── TestA-Login.feature
+│       │   │   ├── TestB-ViewItems.feature
+│       │   │   ├── TestC-AddToCartItems.feature
+│       │   │   ├── TestD-CheckOut.feature
+│       │   │   └── TestE-FinalProcess.feature
+│       │   ├── Locators
+│       │   │   └── SwagLab.properties
+│       │   └── TestData
+│       │       └── SwagLab.properties
+│       └── extent.properties
+└── pom.xml
 
 ### Key Directories and Files:
 - **PageFactory**: Contains page object classes that represent different pages of the application.
@@ -47,3 +77,36 @@ The project structure follows a standard Maven project layout with the following
    ```bash
    git clone https://github.com/rahema-sidd/Selenium-Cucumber-BDD-Framework.git
    cd selenium-cucumber-framework
+2. **Install dependencies:** Ensure that Maven is installed on your system, then run:
+
+    ```bash
+    mvn clean install
+    ```
+
+3. **Configure the test environment:**
+  
+    * Update the `SwagLab.properties` files in the `src/test/resources/Locators` and `src/test/resources/TestData` directories with any environment-specific settings.
+
+## Reporting
+
+After running the tests, reports will be generated automatically.
+
+* **HTML Report**: Located in the `target/cucumber-reports` directory.
+* **Screenshots**: Captured during test failures and included in the report for detailed analysis.
+
+## Dependencies
+
+The project uses the following dependencies:
+
+* **Selenium WebDriver**: For interacting with the web application.
+* **Cucumber**: For implementing BDD using Gherkin syntax.
+* **JUnit**: As the testing framework.
+* **Maven**: For build automation and dependency management.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request for review.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
